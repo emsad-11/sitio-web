@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007BFF;
+            cursor: pointer;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 40px;
+            display: none; /* Oculta las secciones por defecto */
+        }
+        h1 {
+            text-align: center;
+            color: #A5FF33;
+        }
+        h2 {
+            color: #33FFAF ;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        function showSection(id) {
+            // Oculta todas las secciones
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            // Muestra la sección seleccionada
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>LA MEJOR CARLOTA </h1>
+    <nav>
+        <a onclick="showSection('presentacion')">Presentación</a>
+        <a onclick="showSection('mision')">Misión</a>
+        <a onclick="showSection('vision')">Visión</a>
+        <a onclick="showSection('filosofia')">Filosofía</a>
+        <a onclick="showSection('diagrama-gantt')">Diagrama de Gantt</a>
+        <a onclick="showSection('objetivos')">Objetivos a Corto Plazo</a>
+        <a onclick="showSection('manual')">Manual</a>
+        <a onclick="showSection('diagrama-flujo')">Diagrama de Flujo</a>
+        <a onclick="showSection('organigrama')">Organigrama</a>
+        <a onclick="showSection('margen-ganancia')">Margen de Ganancia</a>
+        <a onclick="showSection('presupuesto')">Presupuesto</a>
+    </nav>
+
+    <section id="presentacion">
+        <h2>Presentación</h2>
+        <p>Bienvenidos a nuestra empresa. Nos comprometemos a vender pay de limon de la mejor calidad y con costo asecible, con la mejor atencion al cliente.</p>
+        <img src="presentacion.jpg" alt="Imagen de Presentación">
+    </section>
+
+    <section id="mision">
+        <h2>Misión</h2>
+        <p>Nuestra misión como empresa es ofrecer deliciosos potres de alta calidad, elaborados con los mejores ingredientes.</p>
+        <img src="imagen1.jpg" alt="Descripción de la imagen 1">
+      
+    </section>
+
+    <section id="vision">
+        <h2>Visión</h2>
+        <p>Nos visualizamos en un mediano plazo ser reconocidos como la opcion perfecta en cada uno de nuestros clientes.</p>
+        <img src="imagen3.jpg" alt="Descripción de la imagen 3">
+        
+    </section>
+
+    <section id="filosofia">
+        <h2>Filosofía</h2>
+        <p>Nuestra filosofía se basa en los principios de compromiso con la calidad del producto,calidad y precio.</p>
+        <img src="imagen5.jpg" alt="Descripción de la imagen 5">
+    </section>
+
+    <section id="diagrama-gantt">
+        <h2>Diagrama de Gantt</h2>
+        <p>El diagrama de Gantt muestra la programación de cada uno de los pasos  y actividades a lo largo del tiempo. A continuación, presentamos el diagrama de Gantt para nuestro proyecto.</p>
+        <img src="diagrama_gantt.jpg" alt="Diagrama de Gantt">
+    </section>
+
+    <section id="objetivos">
+        <h2>Objetivos a Corto Plazo</h2>
+        <p>Nuestros objetivos a corto plazo incluyen:</p>
+        <ul>
+            <li>Incrementar la satisfacción del cliente.</li>
+            <li>Reducir los costos operativos.</li>
+            <li>Lanzar dos nuevos productos al mercado.</li>
+            <li>Expandir nuestro negocio.</li>
+        </ul>
+        <img src="objetivos.jpg" alt="Imagen de Objetivos a Corto Plazo">
+    </section>
+
+    <section id="manual">
+        <h2>Manual</h2>
+        <p>El manual de la empresa proporciona directrices y procedimientos para asegurar la consistencia y la calidad en todas nuestras operaciones. Puedes descargar el manual <a href="manual.pdf">aquí</a>.</p>
+        <img src="manual.jpg" alt="Imagen de Manual">
+    </section>
+
+    <section id="diagrama-flujo">
+        <h2>Diagrama de Flujo</h2>
+        <p>El diagrama de flujo muestra los procesos internos de nuestra empresa. A continuación, presentamos el diagrama de flujo de nuestros procesos operativos.</p>
+        <img src="diagrama_flujo.jpg" alt="Diagrama de Flujo">
+    </section>
+
+    <section id="organigrama">
+        <h2>Organigrama</h2>
+        <p>El organigrama muestra la estructura organizativa de nuestra empresa, delineando los roles y responsabilidades de cada miembro del equipo.</p>
+        <img src="organigrama.jpg" alt="Organigrama">
+    </section>
+
+    <section id="margen-ganancia">
+        <h2>Margen de Ganancia</h2>
+        <p>El margen de ganancia es un indicador clave de nuestro desempeño financiero.</p>
+        <img src="margen_ganancia.jpg" alt="Margen de Ganancia">
+    </section>
+
+    <section id="presupuesto">
+        <h2>Presupuesto</h2>
+        <p>El presupuesto de nuestra empresa detalla los ingresos y gastos planificados. A continuación, presentamos un resumen del presupuesto.</p>
+        <img src="presupuesto.jpg" alt="Presupuesto">
+    </section>
+</body>
+</html>
